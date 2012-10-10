@@ -23,7 +23,7 @@ if _trackCount is not 0 then
 	tell application "iTunes"
 		set _trackNames to name of tracks in playlist _playList
 	end tell
-	if _trackNames is not empty then
+	if _trackNames is not equal to "" then
 		set _trackName to SaR(_trackNames, ",", "
 ")
 		do shell script "echo 'Listened to:
